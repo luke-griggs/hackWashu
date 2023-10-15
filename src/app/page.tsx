@@ -1,5 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link"
+
+
 
 export default function signup() {
   return (
@@ -22,7 +25,11 @@ export default function signup() {
             <button className='border w-full my-5 py-2 bg-orange-400 hover:bg-orange-500 text-white'>Sign in</button>
             <div className='flex justify-between'>
               <p className='flex items-center'><input className='mr-2' type="checkbox"/> Remember Me</p>
-              <p>Create an account</p>
+              <div>
+              <Link href="/register" passHref>
+                      Create an account
+              </Link>                  
+              </div>
             </div>
           </form>
         </div>
